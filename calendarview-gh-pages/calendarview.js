@@ -59,7 +59,7 @@ $(document).ready(function() {
     }).catch(handle_err);
 
   // Refresh calendar sources every 5 minutes.
-  setInterval(() => $('#calendar').fullCalendar('refetchEvents'), 5 * 60 * 1000);
+  setInterval(() => $('#calendar').fullCalendar('refetchEvents'), 5 * 1 * 1000);
   // Ensure that the current time is showing every half hour.
   setInterval(() => $('#calendar').fullCalendar('gotoDate', moment()), 30 * 60 * 1000);
 
